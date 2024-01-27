@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.body{
+    background-image: url('wallpaper.jpg');
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    border: 2px solid red;
+    width: 503px;
+    height: 503px;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.food{
+    background: linear-gradient(yellow, green);
+    border-radius: 2px;
+    border: 2px solid black;
+}
+
+.head{
+    background: linear-gradient(rgb(237, 93, 93), rgb(83, 83, 240));
+    border-radius: 2px;
+    border: 2px solid black;
+}
+
+.snake{
+    background-color: purple;
+    border-radius: 2px;
+    border: 2px solid black;
+}
+
+.score1{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: larger;
+}
+
+.level1{
+    position: relative;
+    left: 38vw;
+    bottom: 74vh;
+    width: 17vw;
+    height: 47vh;
+    text-align: center;
+    font-size: xx-large;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    border-radius: 4px;
+}
+ul{
+    list-style: none;
+}
+
+li:hover{
+    cursor: pointer;
+    color: blueviolet;
+}
